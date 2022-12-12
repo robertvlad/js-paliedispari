@@ -13,12 +13,25 @@
          */
 
 
-function
-
 let word = prompt("Inserire una parola");
 
+function checkPalindroma(word)
+{
+    let new_word = word.split("");
+    new_word = new_word.reverse()
+    new_word = new_word.join("")
+    console.log(new_word);
 
+    if(new_word === word){
+        
+        alert("La parola è palindroma")
 
+    }else{
+        alert("La parola non è palindroma")
+    }
+}
+
+checkPalindroma(word);
 
 
 
